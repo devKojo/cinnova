@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinnova Hub</title>
+    <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.1/dist/css/uikit.min.css" />
+<link rel="stylesheet" href="./assets/custom/css/index.css"/>
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.1/dist/js/uikit.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.1/dist/js/uikit-icons.min.js" defer></script>
+</head>
+
+<body>
+    <div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light" style="background-color: var(--custom-green-dark); color:var(--white);">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div uk-navbar>
+    
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo" href="#" aria-label="Back to Home">CINNOVA</a>          
+                </div>
+
+                <div class="uk-navbar-center">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+    
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <div class="uk-overflow-hidden uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow style="height:560px;">
+
+        <ul class="uk-slideshow-items">
+            <li>
+                <img src="./assets/img/mangroove.jpg" alt="" uk-cover>
+                <div class="uk-text-left uk-light uk-overlay uk-overlay-primary" style="position:absolute; top:14%; left:10%">
+                    <h2 class="uk-margin-remove">
+                        CINNOVA-HUB
+                    </h2>
+                    <p class="uk-margin-remove uk-width-large uk-text-lead">
+                        A community of young researchers and innovators in the field of climate change and energy transition established in March 2022
+                    </p>
+                    <button class="uk-button uk-margin" style="background-color:var(--custom-green-dark);">Read More</button>
+                </div>
+            </li>
+            <li>
+                <img src="./assets/img/plantation.jpg" alt="" uk-cover>
+            </li>
+            <li>
+                <img src="./assets/img/solar-farm.jpg" alt="" uk-cover>
+            </li>
+        </ul>
+    
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    
+    </div>
+
+
+    <img src="./assets/img/top-wavy-banner.png" alt="tartted background" style="position: absolute; width:100%; top:78%;"/>
+    <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle" style="background-color: var(--white);">
+        <div class="uk-container uk-margin-large-bottom"> 
+            <h3 class="uk-margin section-heading">Our Focus</h3> 
+        <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon:bolt; ratio: 6" style="color: var(--custom-green-dark)"></a>
+                    <h3 class="uk-card-title">Climate Change</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon:future; ratio: 6" style="color: var(--custom-green-dark)"></a>
+                    <h3 class="uk-card-title">Energy Transition</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon:users; ratio: 6" style="color: var(--custom-green-dark)"></a>
+                    <h3 class="uk-card-title">Youth Employment</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="uk-section uk-section-muted">
+        <div class="uk-container uk-margin-large-bottom">  
+            
+            <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+                <div class="uk-inline">
+                    <div class="uk-box-shadow-large" style="width: 420px; height: 620px; background-color: var(--custom-green-dark); background-image: url('./assets/img/solar-farm.jpg');"></div>
+                    <img width="240px" height="610px" class="uk-box-shadow-large uk-position-center-right-in uk-visible@s" src="./assets/img/close-plantation.jpg" alt="" style="rotate: -20deg;"/>
+                    <img style="width: 80%; rotate: 20deg;" class="uk-margin-large-left uk-box-shadow-large uk-position-center-right-in uk-visible@s" src="./assets/img/idea-bulb.jpg" alt=""/>
+                </div>
+                <div>
+                   <div class="uk-margin-large-left">
+                    <h3 class="uk-text-bold uk-margin-remove">Vision</h3>
+                    <p class="uk-text-lead">
+                        To develops innovations through brainstorming and research, 
+                        that would help drive sustainable development in the West Africa region
+                    </p>
+                   </div>
+                   <div class="uk-margin-large-left">
+                    <h3 class="uk-text-bold uk-text-large">Mission</h3>
+                    <p class="uk-text-lead">
+                        Empower young researchers and climate
+actors develop innovative projects to help address the challenges 
+of climate change and energy transition
+                    </p>
+                </div>
+                </div>
+            </div>
+
+
+    </div>
+    </div>
+
+    <div class="uk-section uk-height-expand">
+        <div class="uk-container">
+    
+            <h3 class="section-heading">How We Do It</h3>
+    
+            <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="./assets/img/project-development.jpg" width="100%" height="40px" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                      
+                            <h3 class="uk-card-title">Project Development</h3>
+                            <p>
+                                We are committed to advocating and developing innovations 
+                                that will favor a greener economy for West Africa
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="./assets/img/creating-awareness.jpg" width="100%" height="40px" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title"> Awareness Creation</h3>
+                        <p>
+                            We create awareness about climate change through: Webinars, Articles and Animation
+                        </p>
+                    </div>
+                </div>
+
+
+
+                </div>
+                <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="./assets/img/training.jpg" width="100%" height="40px" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Mentorship & Training</h3>
+                        <p>
+                            Youth are at the heart of climate action, 
+                            hence our mission to develop their capacities through knowledge and experience exchange
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <div class="uk-section-default">
+        <div class="uk-section uk-height-large uk-light uk-background-cover " style="background-image: url(./assets/img/turbine.jpg)" uk-parallax="bgy: -1000">
+            <div class="uk-container">
+    
+                <h3 class="section-heading uk-margin-large-top" style="font-size: 80px;">Our Journey</h3>               
+            </div>
+        </div>
+    </div>
+    
+
+
+<div class="uk-section" style="background-color:#eaeaea;">
+    <div class="uk-container">
+    <div class="uk-margin-large-top uk-margin-large-bottom uk-child-width-1-3@m uk-grid-match" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top">
+                    <img src="./assets/img/climate-conference.png" width="1800" height="1200" alt="">
+                </div>
+                <div class="uk-card-body">
+                    <div class="uk-card-badge uk-label">MAY 2022</div>
+                    <h3 class="uk-card-title"> Conference on Climate change and Energy Transition</h3>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top">
+                    <img src="./assets/img/eco-project.png" width="1800" height="1200" alt="">
+                </div>
+                <div class="uk-card-body">
+                    <div class="uk-card-badge uk-label">JUNE - AUG. 2022</div>
+                    <h3 class="uk-card-title">Eco-campus Project</h3>
+    
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top">
+                    <img src="./assets/img/knowledge-exchange.png" width="1800" height="1200" alt="">
+                </div>
+                <div class="uk-card-body">
+                    <div class="uk-card-badge uk-label">SEPTEMBER 2022</div>
+                    <h3 class="uk-card-title">Knowledge Exchange Week</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<footer>
+    <div class="uk-section uk-section-default">
+        <div class="uk-container">
+            
+            <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                
+                <div>
+                    <h3 class="section-heading">Contact Us</h3>
+                </div>
+
+                <div>
+                  <p class="uk-margin-remove">  <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="receiver"></a>+228 (0) 90 62 82 11</p>
+                  <p class=""> <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="mail"></a>ciinovahub12@gmail.com </p>
+                </div>
+                <div>
+                   <p> <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="location"></a>P. O. Box 309 Legon Accra </p>
+                   <p class="uk-margin-remove"> <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="clock"></a>Mon - Fri (8:00 a.m - 5:00 pm)</p>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+  
+  <div class="uk-section uk-section-secondary uk-light" >
+        <div class="uk-container">
+            <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                <div>
+                    Copyright &copy;2023 | powered by TechXpace
+                </div>
+                <div>
+             
+                </div>
+                <div>
+                    <div>
+                        <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="linkedin"></a>
+                        <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+                        <a href="" class="uk-icon-button" uk-icon="youtube"></a>
+                        <a href="" class="uk-icon-button" uk-icon="mail"></a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+</footer>
+</body>
+</html>

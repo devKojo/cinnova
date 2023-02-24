@@ -1,0 +1,22 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Tilt+Warp&display=swap');
+
+
+:root{
+    --custom-green-dark: #527B52;
+    --custom-green-light: #D7F5B6;
+    --white: #fff;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Tilt Warp', cursive;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-heading{
+    font-size: 42px;
+    color: var(--custom-green-dark);
+}
