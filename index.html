@@ -26,11 +26,11 @@
                 <div class="uk-navbar-center">
                     <ul class="uk-navbar-nav">
                         <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">SERVICE</a></li>
-                        <li><a href="#">PROJECTS</a></li>
-                        <li><a href="#">TEAM</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#services">SERVICE</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <!-- <li><a href="#">TEAM</a></li> -->
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </div>
     
@@ -49,11 +49,11 @@
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <!-- <li class="uk-active"><a href="#">HOME</a></li> -->
-                            <li><a href="#">ABOUT</a></li>
-                            <li><a href="#">SERVICES</a></li>
-                            <li><a href="#">PROJECTS</a></li>
-                            <li><a href="#">TEAM</a></li>
-                            <li><a href="#">CONTACT</a></li>
+                            <li><a href="#about" uk-scroll>ABOUT</a></li>
+                            <li><a href="#services" uk-scroll>SERVICES</a></li>
+                            <li><a href="#projects" uk-scroll>PROJECTS</a></li>
+                            <!-- <li><a href="#team" uk-scroll>TEAM</a></li> -->
+                            <li><a href="#contact" uk-scroll>CONTACT</a></li>
                         </ul>
                     </div>
                 </div>
@@ -102,9 +102,11 @@
 <!-- end mobile hero section -->
 
     <img class="uk-visible@s" src="./assets/img/top-wavy-banner.png" alt="tartted background" style="position: absolute; width:100%; top:78%;"/>
-    <div class="uk-height-expand uk-flex uk-flex-center@m uk-flex-middle" style="background-color: var(--white);">
+   
+    <!-- about section -->
+    <div id="about" class="uk-height-expand uk-flex uk-flex-center@m uk-flex-middle" style="background-color: var(--white);">
         <div class="uk-container uk-margin-large-bottom"> 
-            <h3 class="uk-margin section-heading">Our Focus</h3> 
+            <h3 class="uk-margin section-heading">OUR FOCUS</h3> 
         <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
             <div>
                 <div class="uk-card uk-card-default uk-card-body uk-text-center">
@@ -165,9 +167,10 @@ of climate change and energy transition
     </div>
 
     <div class="uk-section uk-height-expand">
-        <div class="uk-container">
+        <!-- services section -->
+        <div class="uk-container" id="services">
     
-            <h3 class="section-heading">How We Do It</h3>
+            <h3 class="section-heading">WHAT WE DO</h3>
     
             <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
                 <div>
@@ -221,8 +224,9 @@ of climate change and energy transition
         </div>
     </div>
 
+        <!-- projects section -->
     <div class="uk-section-default">
-        <div class="uk-section uk-height-large uk-light uk-background-cover " style="background-image: url(./assets/img/turbine.jpg)" uk-parallax="bgy: -1000">
+        <div id="projects" class="uk-section uk-height-large uk-light uk-background-cover " style="background-image: url(./assets/img/turbine.jpg)" uk-parallax="bgy: -1000">
             <div class="uk-container">
     
                 <h3 class="section-heading uk-margin-large-top" style="font-size: 80px;">Our Journey</h3>               
@@ -276,8 +280,8 @@ of climate change and energy transition
 <footer>
     <div class="uk-section uk-section-default">
         <div class="uk-container">
-            
-            <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+            <!-- contact section -->
+            <div id="contact" class="uk-grid-match uk-child-width-1-3@m" uk-grid>
                 
                 <div>
                     <h3 class="section-heading">Contact Us</h3>
