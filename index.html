@@ -14,23 +14,23 @@
 </head>
 
 <body>
-    <div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light" style="background-color: var(--custom-green-dark); color:var(--white);">
+    <div class="uk-visible@s" uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light" style="background-color: var(--custom-green-dark); color:var(--white);">
     <nav class="uk-navbar-container">
         <div class="uk-container">
             <div uk-navbar>
     
                 <div class="uk-navbar-left">
-                    <a class="uk-navbar-item uk-logo" href="#" aria-label="Back to Home">CINNOVA</a>          
+                    <a class="uk-navbar-item uk-logo" href="#" aria-label="Back to Home"><h2>CINNOVA</h2></a>          
                 </div>
 
                 <div class="uk-navbar-center">
                     <ul class="uk-navbar-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SERVICE</a></li>
+                        <li><a href="#">PROJECTS</a></li>
+                        <li><a href="#">TEAM</a></li>
+                        <li><a href="#">CONTACT</a></li>
                     </ul>
                 </div>
     
@@ -39,7 +39,31 @@
     </nav>
     </div>
 
-    <div class="uk-overflow-hidden uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow style="height:560px;">
+    <!-- mobile navigation -->
+    <nav class="uk-hidden@s uk-navbar-container">
+        <div class="uk-container">
+            <div uk-navbar>
+    
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#">MENU</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <!-- <li class="uk-active"><a href="#">HOME</a></li> -->
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">SERVICES</a></li>
+                            <li><a href="#">PROJECTS</a></li>
+                            <li><a href="#">TEAM</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </nav>
+    <!-- end mobile navigation -->
+
+    <div class="uk-visible@s uk-overflow-hidden uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow style="height:560px;">
 
         <ul class="uk-slideshow-items">
             <li>
@@ -61,15 +85,24 @@
                 <img src="./assets/img/solar-farm.jpg" alt="" uk-cover>
             </li>
         </ul>
-    
         <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
         <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-    
     </div>
+  <!-- mobile hero section -->
+  <div class="uk-hidden@s">
+    <div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url('./assets/img/idea-bulb.jpg');">
+        <div class="uk-overlay uk-overlay-primary">
+            <h2 class="uk-margin-remove">CINNOVA-HUB</h2>
+            <p class="uk-margin-remove uk-h4">
+                A community of young researchers and innovators in the field of climate change and energy transition established in March 2022
+            </p>
+        </div>
+    </div>
+</div>
+<!-- end mobile hero section -->
 
-
-    <img src="./assets/img/top-wavy-banner.png" alt="tartted background" style="position: absolute; width:100%; top:78%;"/>
-    <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle" style="background-color: var(--white);">
+    <img class="uk-visible@s" src="./assets/img/top-wavy-banner.png" alt="tartted background" style="position: absolute; width:100%; top:78%;"/>
+    <div class="uk-height-expand uk-flex uk-flex-center@m uk-flex-middle" style="background-color: var(--white);">
         <div class="uk-container uk-margin-large-bottom"> 
             <h3 class="uk-margin section-heading">Our Focus</h3> 
         <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
@@ -103,20 +136,20 @@
         <div class="uk-container uk-margin-large-bottom">  
             
             <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
-                <div class="uk-inline">
-                    <div class="uk-box-shadow-large" style="width: 420px; height: 620px; background-color: var(--custom-green-dark); background-image: url('./assets/img/solar-farm.jpg');"></div>
+                <div class="uk-visible@s uk-inline">
+                    <div class="uk-visible@s uk-box-shadow-large" style="width: 420px; height: 620px; background-color: var(--custom-green-dark); background-image: url('./assets/img/solar-farm.jpg');"></div>
                     <img width="240px" height="610px" class="uk-box-shadow-large uk-position-center-right-in uk-visible@s" src="./assets/img/close-plantation.jpg" alt="" style="rotate: -20deg;"/>
                     <img style="width: 80%; rotate: 20deg;" class="uk-margin-large-left uk-box-shadow-large uk-position-center-right-in uk-visible@s" src="./assets/img/idea-bulb.jpg" alt=""/>
                 </div>
                 <div>
-                   <div class="uk-margin-large-left">
+                   <div class="uk-margin-large-left@s">
                     <h3 class="uk-text-bold uk-margin-remove">Vision</h3>
                     <p class="uk-text-lead">
                         To develops innovations through brainstorming and research, 
                         that would help drive sustainable development in the West Africa region
                     </p>
                    </div>
-                   <div class="uk-margin-large-left">
+                   <div class="uk-margin-large-left@s">
                     <h3 class="uk-text-bold uk-text-large">Mission</h3>
                     <p class="uk-text-lead">
                         Empower young researchers and climate
